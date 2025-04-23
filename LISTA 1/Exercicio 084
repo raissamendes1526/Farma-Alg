@@ -1,0 +1,13 @@
+  {Faça um programa Pascal que leia dois números inteiros e imprima a média aritmética inteira entre eles.}
+
+program media;
+
+var x, y: Integer;
+
+  begin
+     
+    read(x, y);
+    
+    writeln((x + y) / 2:0:0);
+    
+  end.
