@@ -1,0 +1,23 @@
+{Faça um programa Pascal que leia um número real representando o diâmetro
+(em metros) de uma esfera. Calcule e imprima o volume desta esfera, 
+com duas casas de precisão.
+Lembre-se que o volume de uma esfera é dado pela fórmula}
+
+program exercicio085;
+
+uses math;
+
+var diametro, volume, raio: Real;
+  
+
+begin 
+  
+  read(diametro);
+  
+  raio := diametro / 2;
+  
+  volume := (4 * 3.14 / 3) * power(raio, 3);
+  
+  writeln(volume:0:2);
+
+end.
