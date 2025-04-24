@@ -1,0 +1,28 @@
+{Faça um programa Pascal que leia do teclado um valor inteiro representando o ano de nascimento de uma pessoa.
+Com esse dado, o programa deve fazer o seguinte:
+
+    Calcular e imprimir sua idade, considerando que estamos no ano de 2020;
+    Verificar e imprimir SIM ou NAO se a pessoa já tem idade para votar (16 anos ou mais);
+    Verificar e imprimir SIM ou NAO se a pessoa já tem idade para conseguir a carteira de habilitação (18 ou mais).}
+    
+  program exercicio024;
+  
+  var ano, idade: Integer;
+  
+  begin 
+    
+    read(ano);
+    
+    idade := 2020 - ano;
+    
+    if (idade >= 16) then 
+      writeln('SIM')
+    else 
+      writeln('NAO');
+    
+    If (idade >= 18) then 
+      writeln('SIM')
+    else
+      writeln('NAO');
+    
+  end.
