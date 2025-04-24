@@ -1,0 +1,19 @@
+{Faça um programa Pascal que leia do teclado dois valores inteiros x e y, e em seguida calcule e imprima o valor da seguinte expressão:
+x^3 + x * y}
+
+
+
+program exercicio088;
+
+uses math; {extensão que permite a função de potencia}
+var x, y: Integer;
+    resultado: Real;
+    
+begin
+
+  read(x, y);
+  resultado := power(x, 3) + x * y; {power = potencia // power(base, expoente) // só imprime numeros reais}
+  
+  writeln(resultado:0:0) {resultado sem casas decimais, com numeros inteiros}
+  
+end.
