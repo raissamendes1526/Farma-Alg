@@ -1,0 +1,31 @@
+{Faça um programa Pascal que leia do teclado três valores reais que são as três notas obtidas por uma pessoa. Leia também um valor inteiro que indica a quantidade de faltas dessa pessoa.
+
+Caso o resultado da média aritmética seja inferior a 4.0 o programa deverá imprimir "NAO".
+Caso a média seja maior ou igual e 4.0 e inferior a 7.0, imprima "TALVEZ".
+Caso a média seja maior ou igual a 7.0 imprima "SIM".
+Alunos com o número de faltas maior ou igual a 10 estarão automaticamente reprovados. Neste último caso, imprima "NAO".}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+program exercico 019
+
+var 
+  nota1, nota2, nota3, faltas, media: Real;
+
+begin
+  read(nota1, nota2, nota3, faltas);
+  media := (nota1 + nota2 + nota3) / 3;
+
+  if faltas >= 10 then
+    writeln('NAO')
+  else
+  
+begin
+    if media < 4 then
+      writeln('NAO')
+    
+    else if (media >= 4) and (media < 7) then
+      writeln('TALVEZ')
+    
+    else if media >= 7 then
+      writeln('SIM');
+  end;
+end.
