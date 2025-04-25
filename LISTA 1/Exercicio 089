@@ -1,0 +1,15 @@
+program exercicio089;
+
+var custofabrica, custoconsumidor: Real;
+    total: Integer;
+
+begin 
+    read(custofabrica);
+    
+    custoconsumidor := custofabrica * 0.28 + custofabrica * 0.45;
+    
+    total := Round(custofabrica + custoconsumidor);
+    
+    writeln(total);
+    
+end.
