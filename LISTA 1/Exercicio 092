@@ -1,0 +1,16 @@
+{Faça um programa Pascal que leia três números inteiros (P1, P2 e P3) contendo as notas das três provas de um aluno em uma certa disciplina e imprima a média final 
+deste aluno, a qual deve ser um número inteiro. Considerar que a média é ponderada e que o peso das notas é 1, 2 e 3, respectivamente. 
+A fórmula que calcula essa média é:}
+
+program exercicio092;
+
+var p1, p2, p3, media: Real; 
+
+begin 
+    read(p1, p2, p3);
+    
+    media := (p1 + (2 * p2) + (3 * p3)) / 6;
+    
+    writeln(media:0:0);
+    
+end.
