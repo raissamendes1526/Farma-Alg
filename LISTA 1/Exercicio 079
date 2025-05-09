@@ -1,0 +1,23 @@
+{Você é um vendedor de carros e só aceita pagamentos à vista. As vezes é necessário ter que dar troco, mas seus clientes não gostam de notas miúdas. Para agradá-los você deve fazer um programa Pascal que receba o valor do troco que deve ser dado ao cliente e retorna o número de notas de R$ 100 necessárias para esse troco.
+Considere que o troco é um número inteiro.
+
+Exemplos:
+Entrada 1:
+500
+Saída Esperada 1:
+5
+}
+
+program exercico079;
+
+var troco, notas: Integer;
+
+begin 
+
+    read(troco);
+    
+    notas:= troco div 100;
+    
+    writeln(notas);
+    
+end.
