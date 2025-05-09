@@ -1,0 +1,25 @@
+Faça um programa Pascal que leia três valores inteiros representando as medidas de 3 lados de um triângulo, calcule a sua área e imprima o resultado com 3 casas decimais. Sabe-se que a área de um 
+triângulo qualquer pode ser calculada pela fórmula:
+
+
+Exemplos:
+Entrada 1:
+5 12 13
+
+program exercicio090;
+
+uses math;
+
+var 
+  a, b, c: Integer;
+  area, p: Real;
+
+begin
+  readln(a, b, c);
+  
+  p := (a + b + c) / 2;
+  
+  area := sqrt(p * (p - a) * (p - b) * (p - c));
+  
+  writeln(area:0:3);
+end.
