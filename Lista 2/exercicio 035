@@ -1,0 +1,63 @@
+{Faça um programa Pascal que leia do teclado um valor real que representa o salário mensal de uma pessoa. Seu programa deve imprimir valor do imposto de renda (IR) mensal, em reais, 
+de acordo com a tabela de 2009, que está abaixo.
+
+Se o salário digitado for menor que o salário mínimo de R$ 540,00 o programa deve imprimir "NAO".
+
+    menor ou igual a 1424,00: 0%;
+    maior que 1424,00, menor ou igual a 2150,00: 7.5%;
+    maior que 2150,00, menor ou igual a 2866,00: 15%;
+    maior que 2866,00, menor ou igual a 3582,00: 22.5%;
+    maior que 3582,00: 27.5%.
+
+  Junto com o valor do IR mensal, o programa deve imprimir a Faixa (1,2,3,4 ou 5) correspondente ao salário.}
+
+program exercicio035;
+
+var faixa: Integer;
+   salario, ir: Real;
+ 
+begin
+  
+  read(salario);
+  
+  if (salario < 540) then
+    writeln('NAO')
+  
+  else
+    begin
+  
+      if salario <= 1424 then
+        begin
+          ir := 0;
+          faixa := 1;
+        end
+    
+      else if (salario > 1424) AND (salario <= 2150) then
+        begin
+          ir := salario * 0.075;
+          faixa := 2;
+        end
+    
+      else if (salario > 2150) AND (salario <= 2866) then
+        begin
+          ir := salario * 0.15;
+          faixa := 3;
+        end
+    
+      else if (salario > 2866) AND (salario <= 3582) then
+        begin
+          ir := salario * 0.225;
+          faixa := 4;
+        end
+    
+      else if (salario > 3582) then
+        begin
+          ir := salario * 0.275;
+          faixa := 5;
+        end;
+     
+     writeln(faixa, ' ', ir:0:2);
+    
+  end;
+    
+end.
