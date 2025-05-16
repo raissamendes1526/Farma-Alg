@@ -1,0 +1,14 @@
+{Faça um programa Pascal que leia dois números inteiros, um será o valor de um produto e outro o valor de desconto que esse produto está recebendo.
+Imprima quantos reais o produto custa na promoção.}
+
+
+
+program exercicio094;
+
+var preco, desconto: longint; {precisa ser Longint para ler numeros grandes}
+
+begin
+    read(preco, desconto); 
+
+    writeln(preco - desconto);
+end.
