@@ -1,0 +1,33 @@
+{Uma empresa concederá um aumento de salário aos seus funcionários, mas este aumento será de acordo com o cargo que cada um ocupa. A tabela abaixo contém os códigos, o cargo e e percentual de aumento 
+correspondente.
+Faça um programa Pascal que leia dois valores do teclado, o primeiro é um número real que informa o salário de um funcionário e o segundo é um número inteiro que informa o código do cargo dele.
+Calcule o valor do novo salário e o imprima na tela com duas casas decimais.
+Se o cargo do funcionário não estiver na tabela, ele deverá receber 40% de aumento. Imprima o valor do salário antigo, o do novo salário e a diferença entre eles, nesta ordem, em 3 linhas, 
+todos eles sempre valores reais com duas casas decimais.}
+
+program exercicio032;
+
+var cod: Integer;
+    sal, aumento: Real;
+    
+begin
+
+read(sal, cod);
+
+if cod = 101 then
+aumento := (sal * 0.1)
+
+else if cod = 102 then
+aumento := (sal * 0.2)
+
+else if cod = 103 then
+aumento := (sal * 0.3)
+
+else
+aumento := (sal * 0.2);
+
+writeln(sal:0:2);
+writeln(sal + aumento:0:2);
+writeln(aumento:0:2);
+
+end.
