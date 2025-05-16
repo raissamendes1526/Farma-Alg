@@ -1,15 +1,19 @@
+{O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos impostos (aplicados ao custo de fábrica).
+Supondo que a percentagem do distribuidor seja de 28% e os impostos de 45%, faça um programa Pascal que leia um número inteiro representando o custo de fábrica de um 
+carro e imprima o custo ao consumidor.}
+
 program exercicio089;
 
-var custofabrica, custoconsumidor: Real;
-    total: Integer;
-
-begin 
-    read(custofabrica);
+var CustFabrica: Longint;
+    CustConsumidor, imposto, distribuidor: Real;
     
-    custoconsumidor := custofabrica * 0.28 + custofabrica * 0.45;
-    
-    total := Round(custofabrica + custoconsumidor);
-    
-    writeln(total);
-    
-end.
+    begin 
+        read(CustFabrica);
+        
+        imposto := CustFabrica * 0.45;
+        distribuidor := CustFabrica * 0.28;
+        CustConsumidor := CustFabrica + imposto + distribuidor;
+        
+        writeln(trunc(CustConsumidor));      { trun impede que o programa arredonde o valor e deixe ele truncado}
+        
+    end.
