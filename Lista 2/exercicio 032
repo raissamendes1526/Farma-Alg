@@ -24,7 +24,7 @@ else if cod = 103 then
 aumento := (sal * 0.3)
 
 else
-aumento := (sal * 0.2);
+aumento := (sal * 0.4);
 
 writeln(sal:0:2);
 writeln(sal + aumento:0:2);
