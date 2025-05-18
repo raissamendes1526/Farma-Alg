@@ -1,0 +1,22 @@
+{Faça um programa Pascal que leia um número inteiro do teclado e imprima o cubo do número caso ele seja positivo ou igual a 
+zero e o quadrado do número caso ele seja negativo.}
+
+program exercicio106;
+
+uses math;
+
+var x: Integer;
+    potencia: Real;
+
+begin 
+    
+    read(x);
+    
+    if x < 0 then 
+      potencia := power(x, 2)
+    else
+      potencia := power(x, 3);
+    
+    writeln(potencia:0:0);
+    
+end.
