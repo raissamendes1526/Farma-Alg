@@ -1,0 +1,16 @@
+{Faça um programa Pascal que leia de teclado um número inteiro e imprima SIM se este é múltiplo de 3 e NAO caso contrário.}
+
+program exercicio107;
+
+var x: Longint;  {----- necessário ser Longint para funcionar com numeros grandes}
+
+begin
+   
+    read(x);
+    
+    if x mod 3 = 0 then
+        writeln('SIM')
+    else
+        writeln('NAO');
+    
+end.
