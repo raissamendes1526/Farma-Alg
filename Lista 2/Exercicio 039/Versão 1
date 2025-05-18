@@ -1,4 +1,6 @@
-program exercicio039;
+{Faça um programa Pascal que receba um número inteiro positivo N e calcule o produto dos N primeiros números pares positivos. 
+Ao final, imprima um inteiro que é este produto. Para esse exercício, considere o primeiro número par como sendo 2.
+  program exercicio039}
 
 var
   N, i, parAtual: Integer;
