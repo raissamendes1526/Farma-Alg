@@ -1,0 +1,33 @@
+[Faça um programa Pascal que leia uma sequência de números inteiros terminada em zero e imprima o maior e o menor número dessa sequência.
+O valor zero não deve ser ser processado, ele serve para marcar o final da entrada de dados.
+
+Exemplos:
+Entrada 1:
+1 55 30 -2 560 -1 0]
+
+program exercicio040;
+
+var x, maior, menor: Integer;
+
+begin
+
+  read(x);
+  
+    x := maior;
+    x := menor;
+    
+  read(x);
+    
+  while x <> 0 do 
+    
+    begin
+      if x > maior then
+        maior := x
+      if x < menor then 
+        menor := x
+        
+      read(x);
+    end;
+  
+  writeln(maior, ' ', menor);
+end.
