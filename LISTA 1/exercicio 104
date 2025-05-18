@@ -1,0 +1,15 @@
+[Faça um programa Pascal que leia do teclado dois números inteiros e imprima qual é o menor valor entre eles.]
+
+program exericio104;
+
+var x, y: Integer;
+
+begin
+    
+    read(x, y);
+     
+     if x < y then 
+      writeln(x)
+     else 
+      writeln(y);
+end.
