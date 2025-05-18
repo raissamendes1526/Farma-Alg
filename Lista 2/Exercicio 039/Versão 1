@@ -1,0 +1,21 @@
+program exercicio039;
+
+var
+  N, i, parAtual: Integer;
+  produto: Int64;  { Usa Int64 para suportar números grandes }
+
+begin
+  read(N);
+
+  produto := 1;    { Começamos o produto com 1, pois é o elemento neutro da multiplicação }
+  parAtual := 2;   { Começamos pelo primeiro número par positivo }
+
+  for i := 1 to N do
+  begin
+    produto := produto * parAtual;  { Multiplica o produto atual pelo par atual }
+    parAtual := parAtual + 2;       { Pula para o próximo número par }
+  end;
+
+  writeln(produto); 
+end.
+
