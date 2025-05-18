@@ -1,0 +1,23 @@
+program program 039;
+
+var
+  N, contador, par: Integer;
+  produto: Int64;
+
+begin
+  read(n);            
+  produto := 1;        
+  contador := 0;      
+  par := 2;            
+
+  while contador < N do
+  begin
+      
+    produto := produto * par;
+    par := par + 2;
+    contador := contador + 1;   
+  end;
+
+  writeln(produto);   
+  
+end.
