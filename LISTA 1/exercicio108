@@ -1,0 +1,13 @@
+program exericico108;
+
+var x: Integer;
+
+begin
+    read(x);
+    
+    if (x > 20) AND (x < 90) then
+      writeln('SIM')
+    else
+      writeln('NAO');
+    
+end.
