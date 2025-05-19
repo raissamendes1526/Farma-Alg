@@ -1,0 +1,26 @@
+program MediaPonderada;
+
+var
+  valor: Real;
+  peso: Integer;
+  somaPesos: Integer;
+  somaPonderada: Real;
+  media: Real;
+
+begin
+  somaPesos := 0;
+  somaPonderada := 0.0;
+
+  read(valor, peso);
+  
+  while (valor <> 0) or (peso <> 0) do
+  begin
+    somaPonderada := somaPonderada + (valor * peso);
+    somaPesos := somaPesos + peso;
+    read(valor, peso);
+  end;
+
+    media := somaPonderada / somaPesos;
+    writeln(media:0:2);
+ 
+end.
