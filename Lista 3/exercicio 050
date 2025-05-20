@@ -1,0 +1,30 @@
+program exercicio050;
+
+var x, y, i, divisoes: Integer;
+
+begin 
+
+    read(x, y);
+    
+    divisoes := 0;
+    i := 0;
+    
+    
+    while x mod y = 0 do
+   
+    begin 
+    
+    i := x div y;
+    
+    x := i;
+    
+    
+   
+    divisoes := divisoes + 1;
+    
+    end;
+    
+    writeln(divisoes);
+    
+end.
+    
