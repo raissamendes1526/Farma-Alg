@@ -1,0 +1,31 @@
+program exercicio048;
+
+var a, b, cont: Integer;
+
+begin
+
+    read(a, b);
+    
+    
+
+    if (a mod 2 <> 1) or (b mod 2 <> 1) then
+      writeln('ERRO')
+    else 
+    
+    begin
+      
+      cont := a;
+      
+      while cont < b do
+      begin
+        a := a * (a + 2);
+        cont := cont + 2;
+      end;
+    
+    end;
+    
+    writeln(a);
+    
+    
+    
+end.
