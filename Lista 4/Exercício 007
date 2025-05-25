@@ -1,0 +1,18 @@
+program exercicio007;
+
+var l, c: Integer;
+
+  begin
+    
+    read(l, c);
+    
+    if (l mod 2 = 0) and (c mod 2 = 0) then
+    writeln('BRANCO')
+    
+    else if (l mod 2 = 1) and (c mod 2 = 1) then
+    writeln('BRANCO')
+    
+    else
+    writeln('PRETO');
+    
+  end.
