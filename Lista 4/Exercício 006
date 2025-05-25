@@ -1,0 +1,31 @@
+program NumerosPerfeitos;
+
+var
+  K, Count, Num, Divisor, Soma: integer;
+
+begin
+  readln(K);     // Lê o número K digitado pelo usuário
+  Count := 0;
+  Num := 2;
+
+  while Count < K do
+  begin
+    Soma := 0;
+
+    for Divisor := 1 to Num div 2 do
+    begin
+      if Num mod Divisor = 0 then
+        Soma := Soma + Divisor;
+    end;
+
+    if Soma = Num then
+    begin
+      write(Num);
+      Count := Count + 1;
+      if Count < K then
+        write(' ');
+    end;
+
+    Num := Num + 1;
+  end;
+end.
