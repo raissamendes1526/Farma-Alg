@@ -1,0 +1,35 @@
+program exercicio011;
+
+var x, i: Integer; 
+    primo: boolean;
+begin
+    read(x);
+    
+    primo := true;
+    i := 3;
+    
+    if x = 2 then
+        writeln('SIM')
+    else if x mod 2 = 0 then
+        writeln('NAO')
+    else 
+        
+        begin
+            
+            while i <= x div 2 do
+              begin
+                if x mod i = 0 then
+                  begin
+                    primo := false;
+                    i := i + 1;
+                  end
+                else 
+                  primo := true;
+              end;
+                      
+        end;
+        
+        if primo = true then
+          writeln('SIM');    
+            
+end. 
