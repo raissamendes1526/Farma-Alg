@@ -1,0 +1,31 @@
+program exercicio010;
+
+var n, produto, a, b, c: Integer;
+
+begin
+    read(n);
+    
+    a := 1;
+    b := a + 1;
+    c := b + 1;
+    
+    produto := a * b * c;
+    
+    while produto < n do 
+        
+        begin
+            
+            a := a + 1;
+            b := b + 1;
+            c := c + 1;
+            
+            produto := a * b * c;
+            
+        end;
+        
+    if produto = n then
+        writeln('1')
+    else 
+        writeln('0');
+        
+end.
