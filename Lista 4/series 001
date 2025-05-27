@@ -1,0 +1,33 @@
+program series001;
+
+var n, x, y, cont: Integer;
+    soma, divi: Real;
+    
+begin 
+
+    read(n);
+    
+    cont := 1;
+    x := 1000;
+    y := 1;
+    soma := x / y;
+    
+    for cont := 2 to n do 
+    
+        begin 
+    
+            x := x - 3;
+            y := y + 1;
+            
+            if cont mod 2 = 0 then
+              divi := - (x / y)
+            else if cont mod 2 = 1 then
+              divi := x / y;
+            
+            soma := soma + divi;
+            
+        end;
+        
+    writeln(soma:0:2);
+    
+end.
