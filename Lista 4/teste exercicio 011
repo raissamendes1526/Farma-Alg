@@ -1,35 +1,45 @@
-program exercicio011;
+program VerificaPrimo;
 
-var x, i: Integer; 
-    primo: boolean;
+var
+  x, i: Integer;
+  primo: Boolean;
+
 begin
-    read(x);
+  
+  readln(x);
+
+  if x <= 1 then
+    writeln('NAO')  // Não é válido (o enunciado diz maior que 1)
+  else if x = 2 then
+    writeln('SIM')  // 2 é o único número par primo
+  else if x mod 2 = 0 then
+    writeln('NAO')  // Todos os outros pares não são primos
+  
+  else
     
-    primo := true;
-    i := 3;
-    
-    if x = 2 then
-        writeln('SIM')
-    else if x mod 2 = 0 then
-        writeln('NAO')
-    else 
+    begin
+      
+      primo := true;
+      i := 3;
+      
+      while i * i <= x do
         
         begin
+          
+          if x mod i = 0 then
             
-            while i <= x div 2 do
-              begin
-                if x mod i = 0 then
-                  begin
-                    primo := false;
-                    i := i + 1;
-                  end
-                else 
-                  primo := true;
-              end;
-                      
-        end;
-        
-        if primo = true then
-          writeln('SIM');    
+            begin
             
-end. 
+              primo := false;
+              break;  // Achou um divisor, não é primo
+              
+            end;
+          i := i + 2;  // Testa só os ímpares
+    end;
+
+    if primo then
+      writeln('SIM')
+    else
+      writeln('NAO');
+  end;
+end.
