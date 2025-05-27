@@ -1,0 +1,35 @@
+program exercicio013;
+
+var 
+    i, j, k, temp: Integer;
+    media: Real;
+    
+begin
+    
+    read(i, j, k);
+    
+    if (j mod i = 0) AND (k mod j = 0) then 
+        writeln(j + k + i)
+        
+    else if (j = i + 1) and (k = i + 2) then
+   
+    begin 
+        
+        temp := i;
+        i := k;
+        k := temp;
+        
+        writeln(i, ' ', j, ' ', k, ' ');
+        
+    end
+        
+    else 
+    
+    begin
+        
+        media := ((i + j + k) / 3);
+        writeln(trunc(media));
+        
+    end;
+    
+end.
