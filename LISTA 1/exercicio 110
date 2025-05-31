@@ -1,0 +1,16 @@
+{Faça um programa Pascal que leia dois números inteiros do teclado e imprima SIM se o primeiro número é divisível pelo segundo.}
+
+program exercicio110;
+
+var a, b: Integer;
+
+begin 
+
+  read(a, b);
+  
+  if a mod b = 0 then
+    writeln('SIM')
+  else 
+    writeln('NAO');
+    
+end.
