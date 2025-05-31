@@ -1,0 +1,14 @@
+program exercicio111;
+
+var a: Longint;
+
+begin
+
+  read(a);
+  
+  if (a mod 3 = 0) AND (a mod 7 = 0) then
+    writeln('SIM')
+  else 
+    writeln('NAO');
+    
+end.
