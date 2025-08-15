@@ -1,0 +1,17 @@
+Faça um programa em Pascal que leia do teclado três valores inteiros, respectivamente, n, a1 e an e realize a soma de uma P.A.
+de n termos, dado o primeiro termo a1 e o último termo an.
+
+program exercicio121; 
+
+uses math;
+
+var n, a1, an, sn: Real;
+
+begin
+
+  read(n, a1, an);
+  sn := (n * (a1 + an) / 2);
+  
+  writeln(sn:0:0);
+  
+end.
