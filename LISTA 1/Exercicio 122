@@ -1,0 +1,16 @@
+Faça um programa Pascal que seja
+capaz de imprimir o enésimo (n) termo (an) de uma P.A., dado a razão (r) e o primeiro termo (a1). Seu programa deve ler três valores inteiros
+do teclado (n, r, a1) do teclado e imprimir o inteiro an, segundo a fórmula:
+
+program exercicio122; 
+
+var n, r, a1, an: Real;
+
+begin 
+   
+    read(n, r, a1);
+  
+    an := a1 + (n - 1) * r;
+  
+    writeln(an:0:0);
+end.
