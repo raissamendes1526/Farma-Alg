@@ -1,0 +1,18 @@
+Faça um programa Pascal que leia um número inteiro do teclado. Se ele estiver entre os valores -15 e 30 (-15 e 30 não estão inclusos), imprima seu número oposto, senão imprima o próprio número.
+
+
+
+program exercicio085;
+
+var x: Integer;
+
+begin
+
+read(x);
+
+  if (x > -15) AND (x < 30) then 
+    writeln(x * (-1))
+  else 
+  writeln(x);
+  
+end.
