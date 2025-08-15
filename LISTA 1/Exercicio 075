@@ -1,0 +1,17 @@
+Considere que o número de uma placa de veículo é composto por quatro algarismos. Faça um programa Pascal que leia um número inteiro que tenha exatamente 4 dígitos do
+teclado e imprima o algarismo correspondente à casa das unidades.
+Use o operador MOD.
+
+program exercicio075;
+
+var numero, resto: Integer;
+
+begin
+
+  read(numero);
+   
+  resto := numero mod 10;
+  
+  writeln(resto);
+  
+end.
