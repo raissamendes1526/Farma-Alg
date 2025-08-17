@@ -1,0 +1,49 @@
+Faça um programa Pascal que leia do teclado um conjunto de 4 valores i, a, b, c, sendo que i é um valor inteiro e positivo e a, b, c, são quaisquer valores reais. Imprima na tela os valores de a, b, c
+da seguinte forma:
+
+    os três valores a, b, c em ordem crescente, se i = 1
+    os três valores a, b, c em ordem decrescente, se i = 2,
+    os três valores a, b, c de forma que o maior dentre a, b, c fique entre os outros dois valores, com a ordem relativa entre os outros dois deles mantida, se i = 3. 
+
+
+program OrdenaValores;
+
+var
+   i: integer;
+   a, b, c, menor, medio, maior: real;
+
+begin
+   readln(i, a, b, c);
+
+   { Descobrir o menor }
+   menor := a;
+   if b < menor then 
+      menor := b;
+   if c < menor then 
+      menor := c;
+
+   { Descobrir o maior }
+   maior := a;
+   if b > maior 
+      then maior := b;
+   if c > maior then 
+      maior := c;
+
+   { Descobrir o do meio }
+   if (a <> menor) and (a <> maior) then 
+      medio := a
+   else if (b <> menor) and (b <> maior) then 
+      medio := b
+   else if (c <> menor) AND (c <> maior) then 
+      medio := c;
+
+   { ---- Saída conforme o valor de i ---- }
+   if i = 1 then
+      writeln(menor:0:0, ' ', medio:0:0, ' ', maior:0:0)
+      
+   else if i = 2 then
+      writeln(maior:0:0, ' ', medio:0:0, ' ', menor:0:0)
+      
+   else if i = 3 then
+      writeln(menor:0:0, ' ', maior:0:0, ' ', medio:0:0);
+end.
