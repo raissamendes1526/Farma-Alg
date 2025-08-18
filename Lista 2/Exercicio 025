@@ -1,0 +1,16 @@
+program Exercicio025;
+
+var dia, mes, ano, idade: Integer;
+
+begin
+
+read(dia, mes, ano);
+
+if ((dia > 29) AND (mes >= 04) OR (mes > 4)) then
+  idade := 2021 - ano - 1
+else if ((dia <= 29) AND (mes <= 04) OR (mes < 4)) then
+  idade := 2021 - ano;
+
+writeln(idade);
+
+end.
