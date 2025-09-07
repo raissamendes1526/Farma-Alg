@@ -18,3 +18,25 @@ begin
 
   writeln(soma);
 end.
+
+
+{forma alternativa} ----------------------------------------------
+
+
+program exercicio047;
+uses math;
+var i, cont: Real;
+
+begin
+  i := 1;
+  cont := 1; 
+
+  while cont < 50 do
+    begin
+      i := i + power(cont + 1, 2);
+      cont := cont + 1;
+    end;
+
+writeln(i:0:0);
+
+end.
