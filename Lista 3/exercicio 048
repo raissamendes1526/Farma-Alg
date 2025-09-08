@@ -1,31 +1,16 @@
-program exercicio048;
 
-var a, b, cont: Integer;
-
+program produto_impares;
+var
+    a, b, produto: longint;
 begin
-
     read(a, b);
-    
-    
 
-    if (a mod 2 <> 1) or (b mod 2 <> 1) then
-      writeln('ERRO')
-    else 
-    
+    produto := 1;
+
+    while a <= b do
     begin
-      
-      cont := a;
-      
-      while cont < b do
-      begin
-        a := a * (a + 2);
-        cont := cont + 2;
-      end;
-    
+        produto := produto * a;
+        a := a + 2;
     end;
-    
-    writeln(a);
-    
-    
-    
+    writeln(produto);
 end.
