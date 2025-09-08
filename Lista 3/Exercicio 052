@@ -1,9 +1,10 @@
-uses Math;
+{Faça um programa Pascal que leia do teclado um número inteiro m e em seguida uma sequência de outros m números reais. Imprima a média aritmética REAL entre eles. Imprima com duas casas decimais.
+exemplo: (n1 + n2 + ... + nm) / (m)
+*}
 
 var
   m, cont: Integer;
   numero, soma, media: Real;
-  resultado: Real;
   
 begin
   read(m);
@@ -20,8 +21,5 @@ begin
   
   media := soma / m;
 
-  // Arredonda para cima com 2 casas decimais
-  resultado := Ceil(media * 100) / 100;
-
-  writeln(resultado:0:2);  //  Mostra com 2 casas decimais
+  writeln(media:0:2);
 end.
