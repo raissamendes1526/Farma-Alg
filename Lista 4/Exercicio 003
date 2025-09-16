@@ -1,32 +1,31 @@
-program Exercicio003;
+program Exercicio 003
+;
 
-var
-  a, b: Integer;
-  todos_sao_quadrados: Boolean;
-
-function b_eh_quadrado(a, b: Integer): Boolean;
-begin
-  b_eh_quadrado := (b = a * a);
-end;
+var n, q, cont: Integer;
 
 begin
   
-  todos_sao_quadrados := true;
-
-  read(a, b);
-
-  while (a <> 0) or (b <> 0) do
-  begin
+  read(n);
+  read(q);
+  
+  cont := 0;
+  
+  while n <> 0 do 
+    begin
+      if q <> n * n then
+      cont := cont + 1;
     
-    if not b_eh_quadrado(a, b) then
-      todos_sao_quadrados := false;
-
-    read(a, b);
+      read(n);
       
-  end;
-
-  if todos_sao_quadrados then
-    writeln('1')
+      if n = 0 then
+        break
+      else
+        read(q);
+    end;
+  
+  if cont > 0 then
+    writeln('0')
   else
-    writeln('0');
+    writeln('1');
+    
 end.
